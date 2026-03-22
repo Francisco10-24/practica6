@@ -13,21 +13,20 @@ export function Nav() {
   const pathname = usePathname(); 
  
   return ( 
-    <nav className="bg-white border-b">
-      <div className="container mx-auto px-4 flex justify-between items-center h-16">
-        <span className="font-bold text-xl">Panel de reservas</span> 
-        <div className="flex gap-4"> 
+    <header className="border-b border-gray-200 bg-white"> 
+      <div className="max-w-4xl mx-auto px-6 h-14 flex items-center justify
+between"> 
+        <nav className="flex items-center gap-6"> 
           {enlaces.map(({ href, etiqueta }) => ( 
-            <Link 
-              key={href}
-              href={href} 
-              className={`hover:text-blue-600 ${pathname === href ? "font-bold text-blue-600" : "text-gray-600"}`}
-            >
+            <Link key={href} href={href} 
+              className={pathname === href ? 'text-black font-medium text-sm' : 
+'text-gray-500 text-sm hover:text-black'} 
+            > 
               {etiqueta} 
             </Link> 
           ))} 
-        </div> 
-      </div>
-    </nav> 
+        </nav> 
+      </div> 
+    </header> 
   ); 
-}
+} 

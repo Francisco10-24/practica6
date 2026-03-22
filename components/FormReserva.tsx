@@ -1,7 +1,6 @@
 "use client";
 import { useActionState } from "react";
 import { crearReserva } from "@/app/actions/reservas";
-// Asegúrate de que este import coincida con el nombre de tu archivo del botón
 import { BotonEnviar } from "./BotonEnviar"; 
 
 export default function FormReserva({ servicios }: { servicios: any[] }) {
@@ -14,7 +13,7 @@ export default function FormReserva({ servicios }: { servicios: any[] }) {
         <p className="text-sm text-gray-500 mt-1">Completa los datos para crear una nueva reserva.</p>
       </div>
 
-      {/* Aquí se mostrará el error si la fecha choca con otra cita (Ejercicio 1) */}
+      
       {estado.mensaje && (
         <div className="mb-6 p-3 bg-red-50 border-l-4 border-red-500 text-red-700 rounded text-sm font-medium">
           {estado.mensaje}

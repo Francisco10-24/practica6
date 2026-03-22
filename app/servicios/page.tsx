@@ -15,7 +15,7 @@ export default async function PaginaServicios() {
         <h1 className="text-xl font-semibold">Servicios</h1>
          <Link href="/servicios/nuevo" className="bg-black text-white px-4 py-2 rounded 
 text-sm"> 
-          Agregar Paco
+          Agregar Servicio
         </Link> 
       </div> 
       <ul className='space-y-3'> 
